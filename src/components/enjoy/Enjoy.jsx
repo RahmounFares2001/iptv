@@ -12,7 +12,7 @@ export default function Enjoy() {
         <h1 className='text-blue-950 text-3xl'>Immerse yourself in the thrilling world of sports, indulge in captivating movies, and indulge in your favorite TV shows and more.</h1>
 
         <button className='bg-blue-950 text-white text-xl px-8 py-2 md:w-3/5 w-3/5 rounded-lg
-        hover:bg-blue-950/90' >Call Us Now For Purchase IPTV</button>
+        hover:bg-blue-950/90' >Call Us Now</button>
       </div>
 
       <div className='lg:w-3/6 lg:5/6 flex justify-center items-center'>
