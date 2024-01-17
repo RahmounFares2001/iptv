@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 //images
 import logo from "../../assets/header/logo.jpg"
@@ -9,9 +9,17 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 export default function Header() {
 
-  const scrollPrice = () => {
-    document.querySelector(".price").scrollIntoView({behavior: "smooth"})
+  const [ btnScrollTo, setBtnSCrollTo ] = useState("");
+
+  const btnId = (id) => {
+      setBtnSCrollTo(id);
+      document.querySelector(`.${btnScrollTo}`).scrollIntoView({behavior: "smooth"})
   };
+
+  // const scrollPrice = () => {
+  //   document.querySelector(".price").scrollIntoView({behavior: "smooth"})
+  // };
+
 
   const userStyle = {
     width: '30px',
@@ -27,9 +35,11 @@ export default function Header() {
         <ul className='flex justify-center items-center gap-10  lg:text-base text-white py-3'>
           <li className='text-orange-500 cursor-pointer text-base sm:text-xl hover:text-red-500'>Home</li>
           <li className='cursor-pointer text-base sm:text-xl hover:text-orange-500'
-              onClick={scrollPrice}>Price</li>
-          <li className='cursor-pointer text-base sm:text-xl hover:text-orange-500'>Reviews</li>
-          <li className='cursor-pointer text-base sm:text-xl hover:text-orange-500'>Contact</li>
+              onClick={() => {btnId("price")}}>Price</li>
+          <li className='cursor-pointer text-base sm:text-xl hover:text-orange-500'
+               onClick={() => {btnId("reviews")}}>Reviews</li>
+          <li className='cursor-pointer text-base sm:text-xl hover:text-orange-500'
+              onClick={() => {btnId("contact")}}>Contact</li>
         </ul>
       </div>
 
