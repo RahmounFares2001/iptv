@@ -51,7 +51,7 @@ export default function Movies() {
   };
 
   return (
-    <div style={{backgroundColor: '#040527'}} className='flex flex-col gap-10 p-10'>
+    <div style={{backgroundColor: '#040527'}} className='flex flex-col gap-10 p-6 sm:p-10'> 
       <h1 className='text-3xl text-orange-600 text-center font-bold'>Unlimited movies, TV shows, and more</h1>
 
       <Slider {...settings}>

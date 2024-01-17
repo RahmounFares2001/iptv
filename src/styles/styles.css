@@ -2,7 +2,7 @@ div .bg{
     background-image: url(../assets//home/home1.jpg);
     background-size: cover;
     overflow: hidden;
-    animation: change 10s infinite ease-in-out;
+    animation: change 15s infinite ease-in-out;
     max-height: 750px;
 }
 
@@ -10,10 +10,13 @@ div .bg{
     0%{
         background-image: url(../assets//home/home1.jpg);
     }
-    50%{
+    33%{
         background-image: url(../assets//home/home2.jpg);
     }
-    100%{
+    33%{
         background-image: url(../assets//home/home3.jpg);
+    }
+    100%{
+        background-image: url(../assets//home/home4.jpg);
     }
 }

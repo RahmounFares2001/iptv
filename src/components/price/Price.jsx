@@ -12,7 +12,7 @@ import price from "../../assets/price/price.jpg";
 
 export default function Price() {
   return (
-    <div style={{backgroundColor: '#040527'}} className='flex flex-col justify-center items-center gap-10 py-10'>
+    <div style={{backgroundColor: '#040527'}} className='price flex flex-col justify-center items-center gap-10 py-10'>
       <h1 className='text-orange-500 font-bold text-4xl'>Choose Your Plan</h1>
 
       <div className='flex flex-row gap-5 flex-wrap justify-center items-center'>

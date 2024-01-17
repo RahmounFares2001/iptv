@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Home() {
+
   return (
     <div className='w-screen h-screen pt-16 pl-10 flex flex-col gap-10 lg:gap-0'>
 
